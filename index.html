@@ -115,6 +115,29 @@ footer a{color:var(--muted)}
   .hero{padding:44px 0 48px}
   section{padding:48px 0}
 }
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero-art svg{width:100%;height:auto;display:block;overflow:visible}
+.hero-art .ha-card{fill:var(--card);stroke:var(--line)}
+.hero-art .ha-rule{stroke:var(--line)}
+.hero-art .ha-bg{fill:var(--bg)}
+.hero-art .ha-url{font:500 10px var(--sans);fill:var(--muted)}
+.hero-art .ha-dot1{fill:var(--pink)}.hero-art .ha-dot2{fill:var(--accent);opacity:.6}.hero-art .ha-dot3{fill:var(--line)}
+.hero-art .ha-accent{fill:var(--accent)}
+.hero-art .ha-ink{fill:var(--ink);opacity:.85}
+.hero-art .ha-muted{fill:var(--muted);opacity:.35}
+.hero-art .ha-tint{fill:var(--accent);opacity:.14}
+.hero-art .ha-peaks{fill:var(--accent);opacity:.45}
+.hero-art .ha-sun{fill:var(--pink);opacity:.8}
+.hero-art .ha-box{fill:none;stroke:var(--line)}
+.hero-art .ha-pink{fill:var(--pink);opacity:.8}
+.hero-art .ha-label{font:600 12px var(--sans);fill:var(--muted)}
+.hero-art .ha-up{fill:var(--pink);opacity:.18}
+.hero-art .ha-arrow{fill:none;stroke:var(--pink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.hero-art .ha-line{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round}
+.hero-art .ha-track{fill:var(--line)}
+.hero-art .ha-cyan{fill:#80ffea}
+@media (prefers-color-scheme:light){.hero-art .ha-cyan{fill:#1fb7a3}}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.hero-art{display:none}}
 </style>
 </head>
 <body>
@@ -130,6 +153,7 @@ footer a{color:var(--muted)}
 
   <main>
     <div class="hero">
+      <div class="hero-copy">
       <p class="eyebrow">B2B marketing · Websites · Search · Portland, Oregon</p>
       <h1>Websites that get found and <em>turn visitors into leads.</em></h1>
       <p class="lede">I'm Mike Ackerman, a B2B marketer with more than 10 years in demand generation, websites and search. I help small and midsize businesses build sites that load fast, show up in Google and AI answers, and bring in real leads.</p>
@@ -137,6 +161,53 @@ footer a{color:var(--muted)}
         <a class="btn primary" href="mailto:mike@palisadesmedia.co?subject=Project%20inquiry">Email me</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/mike-ackerman-marketing/">View my LinkedIn</a>
       </div>
+      </div>
+<div class="hero-art" aria-hidden="true">
+<svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg" role="presentation">
+  <defs>
+    <linearGradient id="ha-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--accent)" stop-opacity=".35"/>
+      <stop offset="1" stop-color="var(--accent)" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="ha-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <g class="ha-browser">
+    <rect x="10" y="10" width="400" height="300" rx="14" class="ha-card"/>
+    <line x1="10" y1="44" x2="410" y2="44" class="ha-rule"/>
+    <circle cx="32" cy="27" r="5" class="ha-dot1"/><circle cx="48" cy="27" r="5" class="ha-dot2"/><circle cx="64" cy="27" r="5" class="ha-dot3"/>
+    <rect x="92" y="18" width="226" height="18" rx="9" class="ha-bg"/>
+    <text x="205" y="31" text-anchor="middle" class="ha-url">yourbusiness.com</text>
+    <rect x="30" y="60" width="58" height="10" rx="5" class="ha-accent"/>
+    <rect x="270" y="62" width="30" height="6" rx="3" class="ha-muted"/><rect x="310" y="62" width="30" height="6" rx="3" class="ha-muted"/><rect x="350" y="62" width="40" height="6" rx="3" class="ha-muted"/>
+    <rect x="30" y="92" width="196" height="16" rx="5" class="ha-ink"/>
+    <rect x="30" y="114" width="148" height="16" rx="5" class="ha-accent"/>
+    <rect x="30" y="142" width="180" height="7" rx="3.5" class="ha-muted"/>
+    <rect x="30" y="156" width="156" height="7" rx="3.5" class="ha-muted"/>
+    <rect x="30" y="178" width="84" height="22" rx="11" class="ha-accent"/>
+    <rect x="262" y="88" width="128" height="112" rx="10" class="ha-tint"/>
+    <path d="M262 186 L300 136 L322 160 L348 120 L390 176 L390 190 Q390 200 380 200 L272 200 Q262 200 262 190 Z" class="ha-peaks"/>
+    <circle cx="364" cy="108" r="8" class="ha-sun"/>
+    <rect x="30" y="222" width="110" height="68" rx="8" class="ha-box"/>
+    <rect x="155" y="222" width="110" height="68" rx="8" class="ha-box"/>
+    <rect x="280" y="222" width="110" height="68" rx="8" class="ha-box"/>
+    <rect x="44" y="238" width="40" height="7" rx="3.5" class="ha-pink"/><rect x="44" y="254" width="80" height="5" rx="2.5" class="ha-muted"/><rect x="44" y="266" width="64" height="5" rx="2.5" class="ha-muted"/>
+    <rect x="169" y="238" width="40" height="7" rx="3.5" class="ha-pink"/><rect x="169" y="254" width="80" height="5" rx="2.5" class="ha-muted"/><rect x="169" y="266" width="64" height="5" rx="2.5" class="ha-muted"/>
+  </g>
+  <g filter="url(#ha-shadow)">
+    <rect x="196" y="246" width="236" height="146" rx="14" class="ha-card"/>
+  </g>
+  <text x="216" y="274" class="ha-label">Leads</text>
+  <rect x="258" y="262" width="34" height="18" rx="9" class="ha-up"/>
+  <path d="M268 274 l7 -7 l7 7" class="ha-arrow"/>
+  <path d="M216 336 C236 330 248 322 266 324 C286 326 296 308 316 304 C338 300 350 286 370 282 C384 279 400 270 412 262 L412 344 L216 344 Z" fill="url(#ha-fill)"/>
+  <path d="M216 336 C236 330 248 322 266 324 C286 326 296 308 316 304 C338 300 350 286 370 282 C384 279 400 270 412 262" class="ha-line"/>
+  <text x="216" y="366" class="ha-label">Search visibility</text>
+  <rect x="216" y="374" width="196" height="7" rx="3.5" class="ha-track"/>
+  <rect x="216" y="374" width="150" height="7" rx="3.5" class="ha-cyan"/>
+</svg>
+</div>
     </div>
 
     <section id="services" aria-labelledby="h-services">
@@ -169,7 +240,7 @@ footer a{color:var(--muted)}
         </div>
         <ul class="proof">
           <li><b>Website rebuilds</b><span>Moved a corporate WordPress site to Elementor Pro with a focus on mobile page speed and SEO.</span></li>
-          <li><b>Marketing platform migrations</b><span>Led a move from Salesforce Marketing Cloud to HubSpot and connected it to Salesforce.</span></li>
+          <li><b>Marketing platform migrations</b><span>Part of the team that moved marketing from Salesforce Marketing Cloud to HubSpot and connected it to Salesforce.</span></li>
           <li><b>Programs that run every month</b><span>Webinar series, a companion podcast, email nurture and paid campaigns on LinkedIn, Google and YouTube.</span></li>
           <li><b>AI-assisted marketing ops</b><span>Custom tools and workflows that cut busywork so the team can focus on the work that moves pipeline.</span></li>
         </ul>
